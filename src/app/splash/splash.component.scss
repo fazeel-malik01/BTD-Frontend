@@ -1,0 +1,56 @@
+.carousel-container {
+    position: relative;
+  }
+  
+  .carousel-inner {
+    display: flex;
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%;
+    position: relative;
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    border: none;
+    padding: 16px;
+  }
+  
+  .center-button {
+    font-size: 1rem;
+  }
+  
+  .slide-content {
+    margin-bottom: 1rem;
+  }
+  
+  @media (max-width: 1046px) {
+    .tumor-content-4{
+      width: 50% !important;
+    }
+  }
+  @media (max-width: 982px) {
+    .tumor-content-4{
+      width: 55% !important;
+    }
+  }
+  @media (max-width: 898px) {
+    .tumor-content-4{
+      width: 70% !important;
+    }
+  }
+  @media (max-width: 719px) {
+    .tumor-content-4{
+      width: 90% !important;
+    }
+  }
+  @media (max-width: 692px) {
+    .tumor-content-4{
+      width: 100% !important;
+    }
+  }

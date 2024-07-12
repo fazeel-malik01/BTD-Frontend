@@ -1,0 +1,23 @@
+.carousel-container {
+    position: relative;
+  }
+  
+  .carousel-inner {
+    display: flex;
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%;
+    position: relative;
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+
+  
+  .center-button {
+    font-size: 1rem;
+  }
+  
