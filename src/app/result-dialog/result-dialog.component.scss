@@ -1,0 +1,90 @@
+/* result-dialog.component.scss */
+.dialog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .dialog-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00b4ff;
+  }
+  
+  .dialog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .result-text {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .description-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    text-align: justify;
+  }
+  
+  .image-preview {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .preview-image {
+    max-width: 100%;
+    max-height: 250px; // Adjust as needed
+    border-radius: 8px;
+  }
+  
+  .dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  
+  .close-button {
+    background-color: #00b4ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .close-button:hover {
+    background-color: #009cdc;
+  }
+
+@media (max-width: 925px) {
+    .text-image{
+        flex-direction:column !important ;
+    }
+    .image-preview,.resp-desc {
+        width: 100% !important;
+    }
+}
+@media (max-width: 465px) {
+    .description-text{
+         font-size: 12px !important;
+    }
+    .result-text{
+        font-size: 14px !important;
+    }
+    .dialog-title{
+        font-size: 1rem !important;
+    }
+} 

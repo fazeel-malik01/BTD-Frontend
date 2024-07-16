@@ -1,0 +1,38 @@
+<!-- <div class="dialog-container">
+<div class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
+    <div class="bg-white rounded-lg shadow-lg max-w-lg w-full p-6 space-y-4">
+        <h1 class="text-2xl font-bold text-gray-800">{{results}}</h1>
+        <div class="flex items-center justify-center w-full image-preview" *ngIf="data.imageUrl">
+            <img [src]="data.imageUrl" class="w-full object-cover h-[20rem]" alt="Uploaded Image" />
+          </div>
+        <div>
+            <p class="text-lg text-gray-700 capitalize">{{ data.result }}</p>
+            <p *ngIf="data.description" class="text-gray-600">{{ data.description }}</p>
+        </div>
+        <div class="flex justify-end">
+            <button (click)="closeDialog()"
+                class="mt-[1rem] center-button bg-[#00b4ff] text-white py-2 px-[2rem] rounded hover:bg-[#009cdc] duration-700 ">
+                Close
+            </button>
+        </div>
+    </div>
+</div>
+</div> -->
+<!-- result-dialog.component.html -->
+<div class="dialog-container">
+    <h1 class="dialog-title">{{results}}</h1>
+    <div class="dialog-content">
+        <p class="result-text capitalize">{{ data.result }}</p>
+        <div class="flex text-image w-full">
+            <div class="w-[75%] px-4 resp-desc">
+                <p *ngIf="data.description" class="description-text">{{ data.description }}</p>
+            </div>
+            <div *ngIf="data.imageUrl" class="image-preview">
+                <img [src]="data.imageUrl" class="preview-image" alt="Uploaded Image" />
+            </div>
+        </div>
+    </div>
+    <div class="dialog-actions">
+        <button (click)="closeDialog()" class="close-button">Close</button>
+    </div>
+</div>

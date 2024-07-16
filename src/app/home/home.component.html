@@ -20,7 +20,7 @@
 
 </div>
 <div class="w-full flex justify-center gap-3 main-div mt-5">
-    <div class="flex items-center justify-center w-[45%] image-placeholder">
+    <div class="flex items-center justify-center w-[90%] image-placeholder ">
         <label for="dropzone-file"
             class="flex flex-col items-center justify-center w-full h-64 border-2 border-[#00b4ff] border-dashed rounded-lg cursor-pointer bg-[#00b4ff33] dark:hover:bg-[#00b4ff61] dark:bg-[#00b4ff61] hover:bg-[#00b4ff61]">
             <div class="flex flex-col items-center justify-center pt-5 pb-6">
@@ -33,36 +33,9 @@
                     drop</p>
                 <p class="text-xs text-[#00b4ff]">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
             </div>
-            <input #fileInput id="dropzone-file" type="file" class="hidden" (change)="previewImage($event); uploadImage($event)"
-                accept="image/*" />
+            <input #fileInput id="dropzone-file" type="file" class="hidden"
+                (change)="previewImage($event); uploadImage($event)" accept="image/*" />
         </label>
-    </div>
-    <div class="flex items-center justify-center w-[45%] image-placeholder">
-        <label
-            class="flex flex-col items-center justify-center w-full h-64 border-2 border-[#00b4ff] border-dashed rounded-lg bg-[#00b4ff33] dark:bg-[#00b4ff61]">
-            <div class="flex flex-col items-center justify-center pt-5 pb-6">
-                <p class="mb-2 text-sm text-[#00b4ff]"><span class="font-semibold">MRI Scan Results:</span> {{
-                    predictionResult }}</p>
-                <p class="text-xs text-[#00b4ff]" *ngIf="tumorDescriptions[predictionResult]">{{
-                    tumorDescriptions[predictionResult] }}</p>
-
-            </div>
-        </label>
-    </div>
-</div>
-<div class="w-full flex justify-center">
-    <div class="flex items-center justify-center w-[45%] image-preview" *ngIf="previewImageUrl">
-        <div
-            class="w-full flex flex-col justify-center items-center mt-4 border-2 border-[#00b4ff] border-dashed rounded-lg bg-[#00b4ff33] dark:bg-[#00b4ff61]">
-            <div class="flex justify-end w-full">
-                <button mat-icon-button class="close-icon text-[#00b4ff] px-3" (click)="clearPreview(fileInput)">
-                    <mat-icon>close</mat-icon>
-                </button>
-            </div>
-            <div class="flex items-center justify-center w-[45%]">
-                <img [src]="previewImageUrl" class="w-[100%] object-cover" alt="Uploaded Image" />
-            </div>
-        </div>
     </div>
 </div>
 <app-footer></app-footer>
