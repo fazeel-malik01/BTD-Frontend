@@ -1,0 +1,121 @@
+
+ul.obj {
+    list-style-type: square;
+  }
+@media (max-width: 770px){
+    .about-heading{
+        font-size: 48px;
+    }
+    .about-subHeading{
+        width: 90%;
+        font-size: 12px;
+
+    }
+}
+@media (max-width: 640px) {
+    .about-team{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+}
+@media (max-width: 530px) {
+    .about-team{
+        padding: 0px 10%;
+    }
+   
+    .about-team-subHeading{
+        font-size: 12px;
+
+    }
+    
+}
+@media (max-width:1230px) {
+    .obj-img-1{
+        width: 100%;
+        position: absolute;
+        right: 55px;
+        top: 61rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .obj-img-2{
+        width: 20%;
+    }
+    .obj-text{
+        width: 80%;
+    }
+    
+}
+@media (max-width: 878px) {
+    .obj-img-1{
+        display: none;
+    
+    }
+    
+}
+@media (max-width: 795px) {
+    .obj-text{
+        width: 100%;
+    }
+    
+}
+@media (max-width: 644px) {
+    .obj-subText, .obj-text{
+        font-size: 13px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+}
+@media (max-width: 532px) {
+    .obj-subText{
+        font-size: 11px;
+      
+    }
+    .obj-text{
+       padding: 0;
+    }
+    
+}
+@media (max-width: 1035px) {
+    .about-ft{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-ft-1, .about-ft-2{
+        width: 100%;
+    }
+    
+}
+@media (max-width: 734px) {
+ 
+    .about-ft-1Text, .about-ft-2Text{
+       font-size: 13px;
+    }
+    
+}
+@media (max-width: 575px) {
+    .about-ft-heading, .about-ft-subHeading{
+       font-size: 32px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .about-ft-1Text, .about-ft-2Text{
+        padding: 0;
+        text-align:center;
+     }
+    
+}
+@media (max-width:585px) {
+    .call-to-action{
+        display: none;
+    }
+    
+}

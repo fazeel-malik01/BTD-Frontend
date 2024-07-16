@@ -1,63 +1,61 @@
 <app-header></app-header>
 
-    <div class="text-center w-full font-bold text-[#009cdc]">
-<h1 style="font-size: 3rem; ">Contact us</h1>
-    </div>
-    <div
-        class="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto  text-black rounded-lg ">
-        <div class="flex flex-col justify-between">
-            <div>
-                <h2 class="lg:text-5xl font-bold leading-tight text-[#009cdc]" style="font-size: 28px;">Ask Your Queries</h2>
-                <div class=" mt-8 text-[#00b4ff]"style="font-size: 15px;">
-                    Contact us! Through emails or Phone Calls and SMS
+<div class="text-center w-full font-bold text-black py-[5rem]">
+    <h1 style="font-size: 3rem; ">Contact us</h1>
+</div>
+<div
+    class="max-w-screen-xl  px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto  text-black rounded-lg ">
+    <div class="flex flex-col justify-between">
+        <div>
+            <h2 class="lg:text-5xl font-bold leading-tight text-black" style="font-size: 28px;">Ask Your Queries</h2>
+            <div class=" mt-8 text-black" style="font-size: 15px;">
+                Contact us! Through emails or Phone Calls and SMS
+            </div>
+            <div style="border-top:1px solid black; margin-top: 3rem;" style="font-size: 14px;">
+                <div class="flex items-center py-2 mt-14">
+                    <mat-icon class="text-black"> location_on</mat-icon>
+                    <span class="px-2 text-gray-300">The University of Lahore, Pakistan</span>
                 </div>
-                <div style="border-top:1px solid black; margin-top: 3rem;" style="font-size: 14px;">
-                    <div class="flex items-center py-2 mt-14">
-                        <mat-icon class="text-[#009cdc]"> location_on</mat-icon>
-                        <span class="px-2 text-[#00b4ff]">Lahore, Pakistan</span>
-                    </div>
-                    <div class="flex items-center py-2">
-                        <mat-icon class="text-[#009cdc]">email</mat-icon>
-                        <span class="px-2 text-[#00b4ff]">jamesdavid33gmail.com</span>
-                    </div>
-                    <div class="flex items-center py-2">
-                        <mat-icon class="text-[#009cdc]">phone</mat-icon>
-                        <span class="px-2 text-[#00b4ff]">+92 333-9999999</span>
-                    </div>
+                <div class="flex items-center py-2">
+                    <mat-icon class="text-black">email</mat-icon>
+                    <span class="px-2 text-gray-300">jamesdavid33gmail.com</span>
+                </div>
+                <div class="flex items-center py-2">
+                    <mat-icon class="text-black">phone</mat-icon>
+                    <span class="px-2 text-gray-300">+92 333-9999999</span>
                 </div>
             </div>
         </div>
-        <div>
-            <form [formGroup]="contactForm">
-                <div>
+    </div>
+    <div>
+        <form [formGroup]="contactForm">
+            <div>
 
-                    <label for="email" class="block mb-2 text-sm font-medium text-[#00b4ff] dark:text-white">Full
-                        Name</label>
-                    <input type="text" name="from_name" formControlName="from_name"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                        placeholder="John Doe">
-                </div>
-                <div class="mt-8">
-                    <label for="email"
-                        class="block mb-2 text-sm font-medium text-[#00b4ff] dark:text-white">Email</label>
-                    <input type="email" name="name" formControlName="email"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                        placeholder="abc@gmail.com">
-                </div>
-                <div class="mt-8">
-                    <label for="message"
-                        class="block mb-2 text-sm font-medium text-[#00b4ff] dark:text-white">Message</label>
-                    <textarea formControlName="message" rows="5"
+                <label for="email" class="block mb-2 text-sm font-medium text-black dark:text-white">Full
+                    Name</label>
+                <input type="text" name="from_name" formControlName="from_name"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                    placeholder="John Doe">
+            </div>
+            <div class="mt-8">
+                <label for="email" class="block mb-2 text-sm font-medium text-black dark:text-white">Email</label>
+                <input type="email" name="name" formControlName="email"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                    placeholder="abc@gmail.com">
+            </div>
+            <div class="mt-8">
+                <label for="message" class="block mb-2 text-sm font-medium text-black dark:text-white">Message</label>
+                <textarea formControlName="message" rows="5"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                     placeholder="Write your message..."></textarea>
-                </div>
-                <div class="mt-8">
-                    <button (click)="send()"
-                        class="bg-[#00b4ff] text-white hover:bg-[#009cdc] duration-700 uppercase text-sm p-3 font-bold tracking-wide  rounded-lg w-full focus:outline-none focus:shadow-outline">
-                        Send Message
-                    </button>
-                </div>
-            </form>
-        </div>
+            </div>
+            <div class="mt-8">
+                <button (click)="send()"
+                    class="bg-[#00b4ff] text-white hover:bg-[#009cdc] duration-700 uppercase text-sm p-3 font-bold tracking-wide  rounded-lg w-full focus:outline-none focus:shadow-outline">
+                    Send Message
+                </button>
+            </div>
+        </form>
     </div>
+</div>
 <app-footer></app-footer>

@@ -1,13 +1,13 @@
 <app-header></app-header>
 <app-slider></app-slider>
 <div class='w-full flex flex-col justify-center items-center mt-[1.5rem]'>
-    <span class="font-semibold text-[#00b4ff] text-[2rem]">Brain Tumor Classification Detection</span>
-    <span class="w-[80%] text-justify text-[#00b4ff] text-[1rem]">
+    <span class="font-semibold text-black text-[2rem]">Brain Tumor Classification Detection</span>
+    <span class="w-[90%] text-justify text-black text-[1rem]">
         Welcome to our Brain Tumor Classification Detection System. Our platform utilizes advanced machine learning
         algorithms to accurately detect and classify three types of brain tumors—glioma, meningioma, and pituitary
         tumors—from MRI scans.
     </span>
-    <span class="w-[80%] text-justify text-[#00b4ff]">
+    <span class="w-[90%] text-justify text-black">
         Early and accurate detection of brain tumors is critical for effective treatment and improved patient outcomes.
         Our system harnesses the power of artificial intelligence to provide rapid, reliable, and precise tumor
         identification, giving healthcare professionals the crucial information they need to make informed decisions.
@@ -33,7 +33,7 @@
                     drop</p>
                 <p class="text-xs text-[#00b4ff]">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
             </div>
-            <input id="dropzone-file" type="file" class="hidden" (change)="previewImage($event); uploadImage($event)"
+            <input #fileInput id="dropzone-file" type="file" class="hidden" (change)="previewImage($event); uploadImage($event)"
                 accept="image/*" />
         </label>
     </div>
@@ -55,7 +55,7 @@
         <div
             class="w-full flex flex-col justify-center items-center mt-4 border-2 border-[#00b4ff] border-dashed rounded-lg bg-[#00b4ff33] dark:bg-[#00b4ff61]">
             <div class="flex justify-end w-full">
-                <button mat-icon-button class="close-icon text-[#00b4ff] px-3" (click)="clearPreview()">
+                <button mat-icon-button class="close-icon text-[#00b4ff] px-3" (click)="clearPreview(fileInput)">
                     <mat-icon>close</mat-icon>
                 </button>
             </div>

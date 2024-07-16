@@ -1,0 +1,17 @@
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    #collapseMenu {
+        display: none;
+    }
+
+    #collapseMenu.block {
+        display: block;
+    }
+}

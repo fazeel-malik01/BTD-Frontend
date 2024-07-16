@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectorRef, Component } from '@angular/core';
+import { ChangeDetectorRef, Component, importProvidersFrom } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { BrowserModule } from '@angular/platform-browser';
+import { bootstrapApplication, BrowserModule } from '@angular/platform-browser';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule} from '@angular/common/http';
 import { SliderComponent } from '../slider/slider.component';
 @Component({
   selector: 'app-home',
@@ -56,30 +56,9 @@ export class HomeComponent {
       });
 }
 
-  clearPreview() {
+  clearPreview(input: HTMLInputElement) {
     this.previewImageUrl = null;
     this.predictionResult = '';
+    input.value = '';
   }
-
-  // previewImageUrl: string | undefined;
-  // constructor() {
-
-  // }
- 
-
-  // previewImage(event: Event, previewId: string) {
-  //   const inputElement = event.target as HTMLInputElement;
-  //   if (inputElement.files && inputElement.files.length > 0) {
-  //     const file = inputElement.files[0];
-  //     const reader = new FileReader();
-  //     reader.onload = () => {
-  //       this.previewImageUrl = reader.result as string;
-  //     };
-  //     reader.readAsDataURL(file);
-  //   }
-  // }
-
-  // clearPreview() {
-  //   this.previewImageUrl = undefined;
-  // }
 }

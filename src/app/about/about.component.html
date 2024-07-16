@@ -1,0 +1,189 @@
+<app-header></app-header>
+
+<div class="w-full flex flex-col justify-center items-center py-[10rem] bg-[#f4f4f473]">
+    <span class="text-[5rem] font-semibold text-black about-heading">About Us</span>
+    <span class="text-[1rem] font-nomral text-black w-[56%] text-center about-subHeading">This project aims to develop a
+        web-based
+        application for the
+        detection and classification of brain tumors using MRI scans. By leveraging advanced machine learning
+        techniques, the application provides accurate and timely diagnoses, potentially improving patient outcomes and
+        aiding healthcare professionals in their decision-making process.</span>
+
+</div>
+<!--Objectives-->
+<div class="w-full flex justify-between px-5 py-[10rem]">
+    <div class="w-[50%] obj-img-1">
+        <img class="w-[65%] obj-img-2" src="./assets/icons/about-brain-1.png">
+    </div>
+    <div class="w-[50%] flex flex-col gap-3 px-5 obj-text">
+        <span class="w-full text-[3rem]">Objectives</span>
+        <div class="w-full flex justify-center text-[1rem] obj-subText">
+            <span>"Our objective is to develop a comprehensive web-based application for brain tumor classification
+                detection. Our first aim is to create an intuitive and user-friendly interface that allows seamless
+                uploading and analysis of MRI scans."</span>
+        </div>
+        <ul class="obj w-full text-[1rem] flex gap-3 flex-col px-5 obj-subText">
+            <li>Develop a user-friendly web interface for uploading MRI scans.</li>
+            <li>Create an intuitive platform for analyzing MRI scans.</li>
+            <li>Implement a robust backend system for processing MRI images.</li>
+            <li>Develop a reliable system for classifying brain tumors.</li>
+            <li>Ensure high accuracy in tumor detection using advanced machine learning models.</li>
+            <li>Enhance classification accuracy with state-of-the-art algorithms.</li>
+            <li>Provide informative feedback on detected tumor types.</li>
+            <li>Offer detailed descriptions for each classified tumor type.</li>
+        </ul>
+
+    </div>
+</div>
+<!--Features-->
+<div class="w-full flex justify-between px-5 py-[10rem] bg-cover bg-center relative text-white"
+    style="background-image: url('./assets/icons/about-brain-2.jpg');">
+
+    <div class="absolute inset-0 bg-black opacity-70"></div>
+    <div class="flex w-full about-ft">
+        <div class="w-[50%] flex flex-col gap-3 px-5 z-10 about-ft-1">
+            <div class="w-full about-ft-heading">
+                <span class="text-[3rem] about-ft-heading">Features</span>
+            </div>
+            <ul class="obj w-full text-[1rem] flex gap-3 flex-col px-5 about-ft-1Text">
+
+                <li>Users can securely upload MRI scans through a streamlined interface designed for ease of use and
+                    confidentiality.</li>
+                <li>Our system employs advanced algorithms to analyze uploaded MRI scans instantly, providing rapid and
+                    accurate brain tumor classification results.</li>
+                <li>Each detected tumor type, including glioma, meningioma, pituitary tumor, and no tumor, is
+                    accompanied by
+                    comprehensive descriptions to aid medical professionals in understanding and interpreting results.
+                </li>
+                <li>Designed with accessibility in mind, our interface ensures a smooth and intuitive experience for
+                    users,
+                    facilitating straightforward navigation and operation.</li>
+            </ul>
+        </div>
+        <div class="w-[50%] flex flex-col gap-3 px-5 z-10 about-ft-2">
+            <div class="w-full about-ft-subHeading ">
+                <span class="text-[3rem] about-ft-subHeading">Technologies</span>
+            </div>
+            <ul class="obj w-full text-[1rem] flex gap-3 flex-col px-5 about-ft-2Text">
+                <li>Angular powers our dynamic and responsive user interface, offering a modern and engaging platform
+                    for
+                    MRI scan analysis.</li>
+                <li>Django manages server-side operations, integrating seamlessly with our machine learning models to
+                    handle
+                    data processing and ensure efficient performance.</li>
+                <li>TensorFlow and Keras form the backbone of our tumor classification model, leveraging deep learning
+                    techniques to achieve high accuracy in diagnosis.</li>
+                <li>Tailwind CSS is utilized to ensure the application is not only visually appealing but also
+                    responsive
+                    across various devices, enhancing accessibility and user experience.</li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<!-- call to action -->
+<div
+    class="w-full flex justify-between items-center px-5 py-5 my-[5rem]  my-5 call-to-action" style="background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,109,121,1) 35%, rgba(0,0,0,1) 100%);">
+    <div class="w-[50%] text-white text-[2rem]">
+        <span>Let's Get Started</span>
+    </div>
+    <div class="w-[50%] flex justify-end">
+        <button routerLink="/uploads"
+            class="center-button bg-[#00b4ff] text-white py-2 px-[2rem] text-[20px] rounded hover:bg-[#009cdc] duration-700">Upload
+            MRI</button>
+    </div>
+</div>
+
+
+<!-- Team Cards -->
+<section class="py-5">
+    <div class="container flex justify-center mx-auto pt-16  ">
+        <div class="about-team max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+            <div>
+                <p
+                    class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+                    Core Team
+                </p>
+            </div>
+            <h2
+                class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto about-team-heading">
+                <span class="relative inline-block">
+                    <svg viewBox="0 0 52 24" fill="currentColor"
+                        class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
+                        <defs>
+                            <pattern id="1d4040f3-9f3e-4ac7-b117-7d4009658ced" x="0" y="0" width=".135" height=".30">
+                                <circle cx="1" cy="1" r=".7"></circle>
+                            </pattern>
+                        </defs>
+                        <rect fill="url(#1d4040f3-9f3e-4ac7-b117-7d4009658ced)" width="52" height="24"></rect>
+                    </svg>
+                    <span class="relative">Meet</span>
+                </span>
+                the innovators behind brain tumor detection
+            </h2>
+            <p class="text-base text-gray-700 md:text-lg about-team-subHeading">
+                We are challenged to create perfect solutions for improving the methods of brain tumor detection
+                with the help of advanced tools and frictionless user interface
+            </p>
+        </div>
+    </div>
+    <div class="w-full bg-[#f4f4f473] px-10 py-10">
+        <div class="container mx-auto">
+            <div
+                class="lg:flex md:flex sm:flex items-center xl:justify-between flex-wrap md:justify-around sm:justify-around lg:justify-around">
+                <div *ngFor="let member of teamMembers"
+                    class="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5">
+                    <div class="rounded overflow-hidden shadow-md bg-white">
+                        <div class="absolute -mt-20 w-full flex justify-center">
+                            <div class="h-32 w-32">
+                                <img [src]="member.avatarUrl" alt="Display Picture of {{ member.name }}" role="img"
+                                    class="rounded-full object-cover h-full w-full shadow-md" />
+                            </div>
+                        </div>
+                        <div class="px-6 mt-16">
+                            <h1 class="font-bold text-3xl text-center mb-1">{{ member.name }}</h1>
+                            <p class="text-gray-800 text-sm text-center">{{ member.position }}</p>
+                            <p class="text-center text-gray-600 text-base pt-3 font-normal">{{ member.description }}
+                            </p>
+                            <div class="w-full flex justify-end pt-5 pb-5">
+                                <img [src]="member.logoUrl" class="w-[25%]">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="bg-white py-6 sm:py-8 lg:py-12">
+    <div class=" max-w-screen-2xl">
+        <div class="flex flex-col overflow-hidden bg-[#f4f4f473] sm:flex-row md:h-80">
+            <!-- image - start -->
+            <div class="order-first h-48 w-full bg-gray-300 sm:order-none sm:h-auto sm:w-1/2 lg:w-2/5">
+                <img src="./assets/icons/about-contact.jpg" loading="lazy" alt="Photo by Andras Vas"
+                    class="h-full w-full object-cover object-center" />
+            </div>
+            <!-- image - end -->
+
+            <!-- content - start -->
+            <div class="flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-3/5">
+                <h2 class="mb-4 text-xl font-bold text-gray-800 md:text-2xl lg:text-4xl">Need Help? We're Here for You!
+                </h2>
+
+                <p class="mb-8 max-w-md text-gray-600">Facing a problem or have a question? Contact our support team
+                    now, and we'll provide the help you need to get back on track.</p>
+
+                <div class="mt-auto">
+                    <button routerLink="/contact"
+                        class="center-button bg-[#00b4ff] text-white py-2 px-[2rem] text-[20px] rounded hover:bg-[#009cdc] duration-700">Contact
+                        support</button>
+                </div>
+            </div>
+            <!-- content - end -->
+        </div>
+    </div>
+</div>
+
+
+<app-footer></app-footer>
